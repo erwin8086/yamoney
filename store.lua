@@ -473,7 +473,7 @@ minetest.register_node("yamoney:store", {
 					if cfg.sell[i] and not stack:is_empty() then
 						if pinv:contains_item("main", stack) then
 							local save = meta:get_int("money_save")/100
-							if meta:get_int("admin") > 0 or ((save >= cfg.sell[i] or card:get_count() >= cfg.sell[i]) and inv:room_for_item("main", stack)) then
+							if meta:get_int("admin") > 0 or ((save >= cfg.sell[i] or (card and card:get_count() >= cfg.sell[i])) and inv:room_for_item("main", stack)) then
 								pinv:remove_item("main", stack)
 								if bcard then
 									bcard:add_money(cfg.sell[i], "Sell'd "..stack:to_string())
