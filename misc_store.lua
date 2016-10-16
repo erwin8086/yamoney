@@ -1,5 +1,5 @@
 local def = {}
-if minetest.get_modpath("streets") then
+if minetest.get_modpath("asphalt") then
 	def[#def+1] = {"streets:asphalt 99", 1}
 end
 
