@@ -45,6 +45,7 @@ function yamoney.register_store(name, text, desc, def)
 			meta:set_string("mode", "buy")
 			meta:set_string("formspec", get_formspec("buy", 0))
 			meta:get_inventory():set_size("pay", 1)
+			meta:set_string("infotext", desc)
 		end,
 		
 		allow_metadata_inventory_move = function(pos, from_list, from_index, to_list, to_index, count, player)

@@ -6,7 +6,10 @@ yamoney.register_store("default", "default_cobble.png^yamoney_5e.png", "Minetest
 	{"default:copper_lump 8", 15},
 	{"default:mese_crystal 2", 40},
 	{"default:diamond 2", 45},
+	{"default:gold_lump 2", 60},
 	{"default:coal_lump 8", 5},
+	{"default:clay_lump 16", 5},
+	{"default:apple 2", 2.50},
 	
 	{"default:axe_stone", 1.50},
 	{"default:pick_stone", 1.50},

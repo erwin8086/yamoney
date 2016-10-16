@@ -24,6 +24,8 @@ minetest.register_node("yamoney:changing", {
 			"default_wood.png^yamoney_50e.png", "default_wood.png^yamoney_100e.png", "default_wood.png^yamoney_200e.png"},
 	groups = {choppy=3, oddly_breakable_by_hand=1},
 	
+	description = "Cash changer",
+	
 	on_construct = function(pos)
 		local meta = minetest.get_meta(pos)
 		meta:set_int("money", 0)

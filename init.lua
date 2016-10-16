@@ -47,3 +47,19 @@ dofile(path.."/card.lua")
 if areas then
 	dofile(path.."/areas.lua")
 end
+
+dofile(path.."/misc_store.lua")
+
+if minetest.get_modpath("farming") then
+	dofile(path.."/farming_store.lua")
+end
+
+if minetest.get_modpath("technic") or minetest.get_modpath("mesecons") then
+	dofile(path.."/technic_store.lua")
+end
+
+if minetest.get_modpath("homedecor") then
+	dofile(path.."/homedecor_store.lua")
+end
+
+dofile(path.."/recipes.lua")
